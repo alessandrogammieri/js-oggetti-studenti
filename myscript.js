@@ -2,10 +2,23 @@
 cognome e età. Stampare a schermo attraverso il for in tutte le proprietà. */
 
 // Dichiarazione variabili
-console.log("Initialized");
+var student, print, display = " ";
 
+// Oggetto studente
+student = {
+  fistName: "Mario",
+  lastName: "Rossi",
+  age: 45
+};
 
+// Ciclo for/in
+for (print in student) {
+  console.log(student[print]);
+  display = display + student[print] + " ";
+}
 
+// Stampiamo a schermo
+document.getElementById('mio_id').innerHTML = display;
 
 
 /* Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e
