@@ -61,3 +61,32 @@ document.getElementById('tuo_id').innerHTML = stamp;
 
 /* Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo
 oggetto studente inserendo nell’ordine: nome, cognome e età. */
+
+// Dichiarazione variabili
+var firstname, lastname, age, ripetente, key, asino = " ";
+
+// Prompt dell'utente
+firstname = prompt("Inserisci qui il tuo nome");
+lastname = prompt("Inserisci qui il tuo cognome");
+age = prompt("Inserisci qui la tua età");
+
+// Oggetto ripetente
+ripetente = {
+  firstName: "",
+  lastName: "",
+  age: ""
+};
+
+// Popola l'oggeto ripetente
+ripetente.firstName = firstname;
+ripetente.lastName = lastname;
+ripetente.age = age;
+
+// Ciclo for/in
+for (key in ripetente) {
+  console.log(ripetente[key]);
+  asino = asino + ripetente[key] + " ";
+}
+
+// Stampiamo a schermo
+document.getElementById('suo_id').innerHTML = asino;
