@@ -25,29 +25,14 @@ document.getElementById('mio_id').innerHTML = display;
 stampare per ognuno nome e cognome */
 
 // Dichiarazione variabili
-var school, key, stamp = " ";
-
-// Oggetti di studenti
-student1 = {
-  firstName: "Mario",
-  lastName: "Rossi",
-  age: 45
-};
-
-student2 = {
-  firstName: "Luca",
-  lastName: "Bianchi",
-  age: 35
-};
-
-student3 = {
-  firstName: "Maria",
-  lastName: "Verdi",
-  age: 28
-};
+var school, stamp = " ";
 
 // Array di oggetti di studenti
-school = [student1, student2, student3];
+school = [
+  {firstName: "Mario", lastName: "Rossi", age: 45},
+  {firstName: "Luca", lastName: "Bianchi", age: 35},
+  {firstName: "Maria", lastName: "Verdi", age: 28}
+];
 
 // Ciclo for
 for (var i = 0; i < school.length; i++) {
