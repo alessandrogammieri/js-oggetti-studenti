@@ -55,6 +55,10 @@ firstname = prompt("Inserisci qui il tuo nome");
 lastname = prompt("Inserisci qui il tuo cognome");
 age = prompt("Inserisci qui la tua età");
 
+// Inserimento nell'array school
+// school.push({firstName: firstname, lastName: lastname, age: age});
+// console.log(school);
+
 // Oggetto ripetente
 ripetente = {
   firstName: "",
